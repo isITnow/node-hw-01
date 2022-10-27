@@ -1,0 +1,29 @@
+{
+  "name": "node-hw-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isITnow/node-hw-01.git"
+  },
+  "author": "Roman Serediuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isITnow/node-hw-01/issues"
+  },
+  "homepage": "https://github.com/isITnow/node-hw-01#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "nanoid": "^4.0.0"
+  }
+}
