@@ -36,6 +36,7 @@ async function removeContact(contactId) {
             throw new Error(`ID:${contactId} is absent`);
         }
         await fs.writeFile(contactsPath, JSON.stringify(contactsList), 'utf8');
+        console.log(`contact with ID:${contactId} has been removed`);
     } catch (error) {
         console.log(error.message);
     }
@@ -52,6 +53,7 @@ async function addContact(name, email, phone) {
         const contacts = await listContacts();
         const contactsList = JSON.stringify([contact, ...contacts], null, '\t');
         await fs.writeFile(contactsPath, contactsList, 'utf8');
+        console.log(`The new contact has been added`);
     } catch (error) {
         console.log(error.message);
     }
